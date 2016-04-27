@@ -1,0 +1,14 @@
+{{text}}
+
+<div class="listview-row" class={{hasAction:action-type:basic-type}}>
+  {{#each item in data.data}}
+    <div class="listview-column">
+      <p class="header-text">
+        {{item.header.text}}
+      </p>
+      <p class="content-text">
+        {{render-content item.content}}
+      </p>
+    </div>
+  {{/each}}
+</div>
