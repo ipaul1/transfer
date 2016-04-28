@@ -3,28 +3,30 @@
   "pushTop": [
     0
   ],
-  "data": [
+  "cells": [
     {
       "columnName" : "Payment Ref",
+      "classes" : ["columns","col-4","text-left"],
       "header": {
         "type": "link",
         "text": "Display text",
-        "classes": [],
+        "classes": ["red"],
         "transitionTo": "To route"
       },
       "content": {
         "type": "link",
         "data": "link Text",
-        "classes": [],
+        "classes": ["text-center","black"],
         "transitionTo": "To route"
       }
     },
     {
       "columnName" : "Payment Type",
+      "classes" : ["columns","col-6","text-right"],
       "header": {
         "type": "basic",
         "text": "Display text",
-        "classes": []
+        "classes": ["text-left","black"]
       },
       "content": {
         "type": "html",
@@ -34,8 +36,9 @@
     },
     {
       "columnName" : "Amount",
+      "classes" : ["columns","col-2","text-right"],
       "content": {
-        "type": "basic",
+        "type": "text",
         "data": "text..",
         "classes": []
       }
