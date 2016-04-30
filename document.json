@@ -1,4 +1,5 @@
 {
+  "row": {
   "type": "basic/action",
   "pushTop": [
     0
@@ -6,42 +7,108 @@
   "cells": [
     {
       "columnName" : "Payment Ref",
-      "classes" : ["columns","col-4","text-left"],
+      "classes" : ["columns","large-2","text-left"],
       "header": {
-        "type": "link",
-        "text": "Display text",
-        "classes": ["red"],
-        "transitionTo": "To route"
+        "type": "basic",
+        "text": "Payment Reference",
+        "classes": ["text-left","black"],
       },
       "content": {
         "type": "link",
-        "data": "link Text",
-        "classes": ["text-center","black"],
+        "data": "ABC12345678901",
+        "classes": ["text-center","light blue"],
         "transitionTo": "To route"
       }
     },
     {
-      "columnName" : "Payment Type",
-      "classes" : ["columns","col-6","text-right"],
+      "columnName" : "Payment From",
+      "classes" : ["columns","large-2","text-left"],
       "header": {
         "type": "basic",
-        "text": "Display text",
+        "text": "Pay From",
         "classes": ["text-left","black"]
       },
       "content": {
-        "type": "html",
-        "data": "<div>adas</div>",
-        "classes": []
+        "type": "basic",
+        "data": "ALPHA INDUSTRIES 13258074 SGD ALP-SGOBO: JAYNE POOLE",
+        "classes": ["text-left","black"]
       }
     },
-    {
-      "columnName" : "Amount",
-      "classes" : ["columns","col-2","text-right"],
+     {
+      "columnName" : "Payment To",
+      "classes" : ["columns","large-2","text-left"],
+      "header": {
+        "type": "basic",
+        "text": "Pay To",
+        "classes": ["text-left","black"]
+      },
       "content": {
-        "type": "text",
-        "data": "text..",
-        "classes": []
+        "type": "basic",
+        "data": "WALMART STORES 123456789 WAL_HO DBS BANK LTD.",
+        "classes": ["text-left","black"]
+      }
+    },
+	 {
+      "columnName" : "Amount",
+      "classes" : ["columns","large-2","text-right"],
+      "header": {
+        "type": "action",
+        "text": "AMOUNT",
+        "classes": ["text-right","blue"],
+		"transitionTo": "To route"
+      },
+      "content": {
+        "type": "basic",
+        "data": "SGD 1,345,800,300,000,000.234",
+        "classes": ["text-right","black"]
+      }
+    },
+	 {
+      "columnName" : "Payment Date",
+      "classes" : ["columns","large-1","text-right"],
+      "header": {
+        "type": "action",
+        "text": "PAYMENT DATE",
+        "classes": ["text-left","blue"],
+		"transitionTo": "To route"
+      },
+      "content": {
+        "type": "basic",
+        "data": "15/12/2015",
+        "classes": ["text-left","black"]
+      }
+    },
+	 {
+      "columnName" : "Type",
+      "classes" : ["columns","large-1","text-right"],
+      "header": {
+        "type": "action",
+        "text": "TYPE",
+        "classes": ["text-left","blue"],
+		"transitionTo": "To route"
+      },
+      "content": {
+        "type": "basic",
+        "data": "RTGS",
+        "classes": ["text-left","black"]
+      }
+    },
+	 {
+      "columnName" : "Status",
+      "classes" : ["columns","large-1","text-right"],
+      "header": {
+        "type": "action",
+        "text": "STATUS",
+        "classes": ["text-left","blue"],
+		"transitionTo": "To route"
+      },
+      "content": {
+        "type": "action",
+        "data": "Partially Authorized 2 of 8",
+        "classes": ["text-left","red"],
+		"transitionTo": "To route"
       }
     }
   ]
+}
 }
